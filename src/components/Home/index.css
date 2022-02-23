@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap");
+:root {
+    --tds-bezier: cubic-bezier(0.5, 0, 0, 0.75);
+    --tds-size: 8px;
+    --tds-size--10x: 80px;
+    --tds-size--11x: 88px;
+    --tds-size--12x: 96px;
+    --tds-size--13x: 104px;
+    --tds-size--1x: 8px;
+    --tds-size--2x: 16px;
+    --tds-size--3x: 24px;
+    --tds-size--4x: 32px;
+    --tds-size--5x: 40px;
+    --tds-size--6x: 48px;
+    --tds-size--7x: 56px;
+    --tds-size--8x: 64px;
+    --tds-size--9x: 72px;
+    --tds-size--half: 4px;
+    --tds-color--black: #000;
+    --tds-color--blue10: #2e4994;
+    --tds-color--blue20: #3457b1;
+    --tds-color--blue30: #3e6ae1;
+    --tds-color--green: #12bb00;
+    --tds-color--grey10: #171a20;
+    --tds-color--grey15: #222;
+    --tds-color--grey20: #393c41;
+    --tds-color--grey25: #444;
+    --tds-color--grey30: #5c5e62;
+    --tds-color--grey35: #8e8e8e;
+    --tds-color--grey40: #a2a3a5;
+    --tds-color--grey45: #bbb;
+    --tds-color--grey50: #d0d1d2;
+    --tds-color--grey60: #e2e3e3;
+    --tds-color--grey65: #eee;
+    --tds-color--grey70: #f4f4f4;
+    --tds-color--red10: #b74134;
+    --tds-color--red20: #ed4e3b;
+    --tds-color--white: #fff;
+    --tds-color--yellow: #fbb01b;
+}
+.Home {
+    height: 100vh;
+    background: url("https://www.tesla.com/ns_videos/model-3-social.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: "Montserrat", sans-serif;
+}
+.navbar__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 70px;
+}
+.navbar__logo {
+    width: 120px;
+    cursor: pointer;
+    margin-left: 50px;
+}
+.navbar__container--listitem,
+.navbar__container--action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar__container--listitem > p,
+.navbar__container--action > p {
+    padding: 6px 20px;
+    border: 1px solid transparent;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1.2px;
+    transition: all 0.4s;
+    cursor: pointer;
+    user-select: none;
+}
+.navbar__container--listitem > p:hover,
+.navbar__container--action > p:hover {
+    background-color: rgba(0, 0, 0, 0.068);
+}
+.detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: calc(100% - 70px);
+}
+.detail__content,
+.detail__button {
+    margin: 80px 0;
+}
+.detail__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.detail__content > p {
+    text-align: center;
+    margin: 0;
+    color: var(--tds-color--grey20);
+}
+.detail__content--brand {
+    font-size: 40px;
+    font-weight: 400;
+}
+.detail__content > p > span {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.192);
+    transition: all 0.4s;
+    cursor: pointer;
+}
+.detail__content > p > span:hover {
+    border-color: black;
+}
+.detail__button {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 30%;
+}
+.detail__button > button {
+    width: 250px;
+    padding: 12px 24px;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    user-select: none;
+    text-transform: uppercase;
+}
+.detail__button > button:nth-child(1) {
+    background-color: var(--tds-color--grey20);
+    color: white;
+}
